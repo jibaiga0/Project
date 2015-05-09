@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Retour vers la nature</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <script src="js/jquery1.11.3.js"></script>
+</head>
+
+<body>
+    <div>
+        <div id="titleimg" >
+            <img id="top" src="img/RVNblur0.svg" alt="RVNblur" />
+            <img id="back" src="img/RVN.svg" alt="RVN" />
+        </div>
+        <div id="buttons">
+            <ul id="nav">
+                <li><a href="#"><img id="heartb" src="img/heartblur.svg" alt="hb"></a></li>
+                <li><a href="#"><img id="heart" src="img/heart.svg" alt="heart"></a></li>
+                <li><a href="#"><img id="fistb" src="img/fistblur.svg" alt="fist"></a></li>
+                <li><a href="#"><img id="fist" src="img/fist.svg" alt="fist"></a></li>
+                <li><a href="#"><img id="planb" src="img/planblur.svg" alt="planb"></a></li>
+                <li><a href="#"><img id="plan" src="img/plan.svg" alt="plan"></a></li>
+            </ul>
+        </div>
+        <div id="description">
+            <p id="moti"><img src="img/moti.svg" alt="heart" /></p>
+            <p id="compe"><img src="img/compe.svg" alt="heart" /></p>
+            <p id="proj"><img src="img/proj.svg" alt="proj"></p>
+        </div>
+        <div id="content">
+            SOME WORDSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+
+
+            DDASFSAF
+        </div>
+
+    </div>
+    <script>
+        $("#heart").hover(function(){
+            $("#moti").addClass("opac1");
+            $("#moti").removeAttr("id");
+            }, function(){
+            $(".opac1").attr("id", "moti")
+            $(".opac1").removeClass("opac1");
+        });
+        $("#fist").hover(function(){
+            $("#compe").addClass("opac1");
+            $("#compe").removeAttr("id");
+            }, function(){
+            $(".opac1").attr("id", "compe")
+            $(".opac1").removeClass("opac1");
+        });
+        $("#plan").hover(function(){
+            $("#proj").addClass("opac1");
+            $("#proj").removeAttr("id");
+            }, function(){
+            $(".opac1").attr("id", "proj")
+            $(".opac1").removeClass("opac1");
+        });
+        
+        $("#heart, #fist, #plan").click(function(){
+            $("#titleimg").attr("class", "minititleimg");
+            $("#titleimg").removeAttr("id");
+            $("#back").addClass("smallimg");
+            $("#back").removeAttr("id");
+            $("#top").addClass("smallimg");
+            $("#top").remove();
+            $("#buttons").addClass("minibuttons");
+            $("#buttons").removeAttr("id");
+            $("#description").addClass("minibuttons");
+            $("#description").removeAttr("id");
+            $("#content").show("#content");
+        });
+        $("#heart").click(function(){
+            $("#content").load("motivation.html");
+        });
+        $("#fist").click(function(){
+            $("#content").load("competence.html");
+        });
+
+    </script>
+</body>
+</html> 

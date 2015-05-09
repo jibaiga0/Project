@@ -1,0 +1,132 @@
+html, body {
+    height:100%;
+}
+
+body{
+    display:flex;
+}
+
+div {
+    background-color: #00af5f;
+    position:relative;
+    margin:0px auto;
+    width:1000px;
+    flex:1;
+}
+
+
+#titleimg {
+    position:relative;
+    top:50px;
+    margin: 0px auto ;
+    padding:auto;
+    width:615px;
+    height:310px;
+}
+
+#top {
+    position:absolute;
+    width:615px;
+    height:240px;
+}
+
+#back {
+    position:absolute;
+    transition:opacity 19s ease-in-out; 
+    width:615px;
+    height:240px;
+    opacity:0;
+}
+
+#back:hover{
+    opacity:1;
+    transition:opacity 1s ease-in-out;
+}
+
+#heart, #heartb, #fist, #fistb, #plan, #planb {
+    position:absolute;
+    width:50px;
+    height:50px;
+    display:inline-block;
+}
+
+#heart, #heartb {
+    top:0px;
+    left:0px;
+}
+
+#fist, #fistb {
+    top:0px;
+    left:60px;
+}
+
+#plan, #planb {
+    top:0px;
+    left:120px;
+}
+
+#heart, #fist, #plan {
+    transition:opacity 1s ease-in-out;
+    opacity:0;
+}
+
+#moti, #compe, #proj {
+    opacity:0;
+}
+
+#heart:hover, #fist:hover, #plan:hover{
+    opacity:1;
+    transition:opacity 1s ease-in-out;
+}
+
+.opac1 {
+    opacity:1;
+}
+
+#buttons, #nav, #description {
+    list-style:none;
+    margin:0px auto;
+    padding:auto;
+    height:50px;
+    width:200px;
+}
+
+#moti, #compe, #proj {
+    position:absolute;
+    color:white;
+    font-family:"sans";
+}
+
+.minititleimg {
+    float:top;
+    margin:0px 0px;
+    padding:auto;
+    width:180px;
+    height:80px;
+    top:10px;
+    left:5px;
+}
+
+.minibuttons {
+    float:top;
+    margin:0px 0px;
+    padding:auto;
+    width:180px;
+    height:50px;
+    top:10px;
+    left:10px;
+}
+
+.smallimg {
+    height:50px;
+    width:180px;
+}
+
+#content{
+    position:absolute; 
+    left:230px;
+    top:50px;
+    display:none;
+    width:60%;
+    background-color:#00d787;
+}
